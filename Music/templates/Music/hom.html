@@ -1,0 +1,26 @@
+{% extends 'Music/base.html' %}
+{% block title %}Music{% endblock  %}
+{% block body %}
+{% load static from staticfiles %}
+<h1>Doc Gisha</h1>
+{% if all_albums %}
+    <h2>Here are my awesome albums:</h2>
+    <ul>
+        {% for album in object_list%}
+            <li><a href="{% url 'Music:detail' album.id %}">{{ album.album_title }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>You do not have any albums</h3>
+{% endif %}
+<p>Baby, I have been thinking.I love it when you go crazy.</p>
+<span>
+    <img src="{% static 'img/4.jpeg' %}">
+    <img src="{% static 'img/10.jpeg' %}">
+    <img src="{% static 'img/13.jpeg' %}">
+    <img src="{% static 'img/received_386281518484258.jpeg' %}">
+    <img src="{% static 'img/1.jpeg' %}">
+    <img src="{% static 'img/9.png' %}">
+
+</span>
+{% endblock %}

@@ -1,0 +1,21 @@
+h1 {
+    color: chocolate;
+}
+
+img {
+    height: 650px;
+    width: 650px;
+}
+
+.my{
+    height: 350px;
+    width: 350px;
+}
+
+.navbar{
+    border-radius: 0;
+}
+
+.navbar-brand{
+    font-family: 'cursive';
+}
